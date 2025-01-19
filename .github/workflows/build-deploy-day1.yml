@@ -1,4 +1,4 @@
-name: Build and deploy
+name: Build and Deploy
 
 on:
   # push:
@@ -14,7 +14,6 @@ env:
   AWS_EC2: "flask-app"
   ECR_REPO: "bootcampflask"
   GIT_SHA: ${{ github.sha }}
-  # AWS_ACCOUNT_ID: "588738611111"
 
 jobs:
   build:
