@@ -3,6 +3,10 @@ on:
   push:
     branches:
       - main
+    paths:
+      - 'day3/**' 
+      - '.github/workflows/build-push-day3.yml'
+  workflow_dispatch:
 jobs:
   build:
     runs-on: ubuntu-latest
